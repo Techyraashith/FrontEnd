@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    #p1{
+        color: brown;
+        font-variant: small-caps;
+
+    }
+
+    .hc{
+        background-color: aquamarine;
+        font-weight: 200;
+        font-style:oblique;
+        font-variant: small-caps;
+        color: blueviolet;
+    }
+
+    .hc:hover{
+        color: chartreuse;
+        font-style: italic;
+        background-color: black;   
+    }
+
+    #in1:focus{
+        background-color: cornflowerblue;
+        font-style: oblique;
+        color: cornsilk;
+    }
+
+    #b1:active{
+        background-color: crimson;
+        width: 100px;
+    }
+
+    p::before{
+        content:"CSS Says:"
+    }
+
+    h3::first-letter{
+        font-size: 50px;
+    }
+    div>p {
+        color: yellow;
+        font-size: 17px;
+        font-variant: small-caps;
+        background-color: blue;
+        font-style: inherit;
+    }
+
+    #d1{
+        height: 20vh;
+        width: 30vw;
+        background-color: darksalmon;
+        border-radius: 1cap;
+        border-width: 20px;
+        border-color: black;
+    }
+
+</style>
+
+<body>
+    <!-- InternalInline CSS -->
+    <p style="color: aqua;">Hey There! Welcome</p>
+
+    <p id="p1">This is My First CSS Working File</p>
+
+    <h3 class="hc">Hey There! Welcome to CSS</h3><br>
+
+    Name : <input id="in1" type="text">
+
+    <button id="b1">Change</button>
+
+    <div>
+        <p> This is present inside the div tag.</p>
+    </div>
+
+    <div id="d1"></div>
+</body>
+</html>
