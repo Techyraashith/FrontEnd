@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raashith's First CSS</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Calibri;
+    }
+
+#nav{
+    height: 9vh;
+    width: 100vw;
+    background-color: rgb(152, 62, 237);
+    display: flex;
+    color: lightgray;
+    justify-content: space-around;
+    align-items: center;
+    transition: 1s all ease-in-out;
+}
+
+#lnav{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+    font-family: Calibri;
+    
+}
+
+#rnav{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav:hover{
+     background-color: lightcoral;
+}
+
+#home{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #212529;
+    display: flex;
+}
+
+#left{
+    width: 20vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    align-items: center; 
+    text-align: center;
+    display: grid;
+    font-family: Calibri;
+    /* row-gap: 5px; */
+    /* grid-template-rows: 3px,6px; */
+}
+#d1{
+    width: 60vw;
+    height: 100vh;
+    margin-top: 20px;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#right{
+    width: 20vw;
+    height: 100vh;
+    /* background-color:yellow; */
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    align-items: center; 
+    text-align: center;
+    display: grid;
+    font-family: Calibri;
+}
+
+p:hover{
+    color: blueviolet;
+    cursor: pointer;
+}
+h4:hover{
+    color: white;
+    cursor: pointer;
+}
+/* #right{
+     width: 20vw;
+     height: 100vh;
+     background-color: blue;
+     display: grid;
+     grid-template-columns: 400px ;
+} */
+
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    text-align-last: center;
+}
+
+</style>
+
+<body>
+    <div id="nav">
+        <div id="lnav">
+            <h4>Home</h4>
+            <h4>Example</h4>
+            <h4>Icons</h4>
+            <h4>Themes</h4>
+            <h4>Blog</h4>        
+        </div>
+
+        <input type="text" placeholder="Search...">
+
+        <div id="rnav"></div>
+    </div>
+
+    <div id="home">
+        <div id="left">
+            <p>Downlode</p>
+            <p>Content</p>
+            <p>Browser & devices</p>
+            <p>Webpack</p>
+            <p>Parcel</p>
+            <p>Vite</p>
+
+        </div>
+        <div id="d1">
+            <h1>Welcome to This Page</h1><br>
+            <h3 style="  font-weight: normal;">Bootstrap is a powerful, feature-packed frontend toolkit. 
+                Build anything from prototype to production in minutes
+                Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. 
+                See it in practice with this Bootstrap CodePen demo.</h3>
+
+                <img src="bootstrapimg.png" alt="">
+
+            <h2 style="font-size: 35px;">Reboot</h2>
+            <h3 style="  font-weight: normal;">For improved cross-browser rendering, 
+            we use Reboot to correct inconsistencies across browsers and devices while providing slightly more opinionated 
+            resets to common HTML elements.</h3>
+        </div>
+        <div id="right">
+            <p>Overview</p>
+            <p>Sass</p>
+            <p>Sass Option</p>
+            <p>Color modes</p>
+            <p>Compnents</p>
+            <p>CSS variables</p>
+        </div>
+    </div>
+</body>
+</html>
