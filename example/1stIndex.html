@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<style>
+   
+   *{
+      margin: 0;
+      padding: 0;
+      font-family: Calibri;
+   }
+   #nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: #983EED;
+    display: flex;
+    color: lightgray;
+    align-items: center;
+    justify-content: space-around;
+   }
+   
+   #left{
+    width: 40%;
+    display: flex;
+    font-size: large; 
+    justify-content: space-around;
+   }
+
+   input{
+    height: 40px;
+    width: 260px;
+    border-radius: 10px;
+    text-align-last:left;
+    padding-left: 20px;
+   }
+
+   h4:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+
+  #home{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #212529;
+    display: flex;
+  }
+
+  #lside{
+    min-height: 100vh;
+    width: 20%;
+    color: #979B9F;
+    font-size: x-large;
+    font-weight: 300;
+    align-items: flex-start; 
+    text-align: left;
+    display: grid;
+    row-gap: 5px;
+    margin-top: 25px;
+    font-family: Calibri;
+    margin-left: 30px;
+  }
+  #center{
+    min-height: 100vh;
+    width :60%;
+  }
+  #rside{
+    min-height: 100vh;
+    width: 20%;
+  }
+
+  p:not(.no-hover):hover {
+    cursor: pointer;
+    color: white;
+    background-color: #3A2372;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+</style>  
+<body>
+    <div id="nav">        
+        <div id="left">
+            <h4>Home</h4>
+            <h4>Example</h4>
+                <h4>Icon</h4>
+                <h4>Blog</h4>
+        </div>
+
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div id="home">
+        <div id="lside">
+            <p class="no-hover" style="font-size: xx-large; font-weight: 600; color: white;">Getting Started</p>
+            <p>Download</p>
+            <p>Contents</p>
+            <p>Browsers & Devices</p>
+            <p>JavaScript</p>
+            <p>Webpack</p>
+            <p>Parcel</p>
+            <p>Vite</p>
+            <p>Accessibility</p>
+            <p>RTL Support</p>
+            <p>Community</p>
+            <p>Versioning</p>
+        </div>
+        <div id="center"></div>
+        <div id="rside"></div>
+    </div>
+</body>
+</html>

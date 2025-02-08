@@ -30,14 +30,13 @@
     justify-content: space-around;
     font-size: large;
     font-family: Calibri;
-    
 }
 
-#rnav{
+/* #rnav{
     width: 10%;
     display: flex;
     justify-content: space-around;
-}
+} */
 
 #nav:hover{
      background-color: lightcoral;
@@ -54,20 +53,26 @@
     width: 20vw;
     height: 100vh;
     /* background-color: aqua; */
-    color: white;
+    color: #979B9F;
     font-size: x-large;
-    font-weight: 600;
-    align-items: center; 
-    text-align: center;
+    font-weight: 300;
+    align-items: flex-start; 
+    text-align: left;
     display: grid;
+    row-gap: 5px;
+    margin-top: 25px;
     font-family: Calibri;
+    margin-left: 30px;
+    
     /* row-gap: 5px; */
     /* grid-template-rows: 3px,6px; */
 }
+
 #d1{
     width: 60vw;
     height: 100vh;
     margin-top: 20px;
+    margin-left: 20px;
     color: white;
 }
 
@@ -79,30 +84,42 @@ h1{
     width: 20vw;
     height: 100vh;
     /* background-color:yellow; */
-    color: white;
-    font-size: x-large;
-    font-weight: 600;
-    align-items: center; 
+    color: #979B9F;
+    font-size: large;
+    /* align-items: flex-start;  */
+    font-weight: 100;
+    /* align-items: center;  */
     text-align: center;
-    display: grid;
     font-family: Calibri;
+    margin-top: 20px;
+    margin-right: 2vw;
+    margin-left: 0;
+  
 }
 
-p:hover{
-    color: blueviolet;
+p:not(.no-hover):hover {
     cursor: pointer;
+    color: white;
+    background-color: #3A2372;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
+
+.right-p:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
 h4:hover{
     color: white;
     cursor: pointer;
+  
 }
-/* #right{
-     width: 20vw;
-     height: 100vh;
-     background-color: blue;
-     display: grid;
-     grid-template-columns: 400px ;
-} */
 
 input{
     height: 40px;
@@ -125,17 +142,25 @@ input{
 
         <input type="text" placeholder="Search...">
 
-        <div id="rnav"></div>
+        <div id="rnav">
+
+        </div>
     </div>
 
     <div id="home">
         <div id="left">
-            <p>Downlode</p>
-            <p>Content</p>
-            <p>Browser & devices</p>
+            <p class="no-hover" style="font-size: xx-large; font-weight: 600; color: white;">Getting Started</p>
+            <p>Download</p>
+            <p>Contents</p>
+            <p>Browsers & Devices</p>
+            <p>JavaScript</p>
             <p>Webpack</p>
             <p>Parcel</p>
             <p>Vite</p>
+            <p>Accessibility</p>
+            <p>RTL Support</p>
+            <p>Community</p>
+            <p>Versioning</p>
 
         </div>
         <div id="d1">
@@ -153,12 +178,18 @@ input{
             resets to common HTML elements.</h3>
         </div>
         <div id="right">
-            <p>Overview</p>
-            <p>Sass</p>
-            <p>Sass Option</p>
-            <p>Color modes</p>
-            <p>Compnents</p>
-            <p>CSS variables</p>
+            <p class="right-p">Overview</p>
+            <p class="right-p">Sass</p>
+            <p class="right-p">Sass Options</p>
+            <p class="right-p">Color Modes</p>
+            <p class="right-p">Components</p>
+            <p class="right-p">CSS Variables</p>
+            <p class="right-p">Forms</p>
+            <p class="right-p">Buttons</p>
+            <p class="right-p">Grid</p>
+            <p class="right-p">Typography</p>
+            <p class="right-p">Helpers</p>
+            <p class="right-p">Utilities</p>
         </div>
     </div>
 </body>
