@@ -1,0 +1,17 @@
+.red:hover{
+    color: #A30015;
+    cursor: pointer;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(110%);
+    transition: 3;
+}
+#Signin:hover{
+    cursor: pointer;
+    color: #A30015;
+}
+#brand:hover{
+    cursor: pointer;
+}

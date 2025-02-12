@@ -22,6 +22,9 @@
     justify-content: space-around;
     align-items: center;
     transition: 1s all ease-in-out;
+    position: sticky;
+    top: 0; 
+    z-index: 500;
 }
 
 #lnav{
@@ -30,6 +33,14 @@
     justify-content: space-around;
     font-size: large;
     font-family: Calibri;
+    margin-left: 10px;
+}
+
+#rnav{
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 /* #rnav{
@@ -38,9 +49,9 @@
     justify-content: space-around;
 } */
 
-#nav:hover{
+/* #nav:hover{
      background-color: lightcoral;
-}
+} */
 
 #home{
     width: 100vw;
@@ -54,7 +65,7 @@
     height: 100vh;
     /* background-color: aqua; */
     color: #979B9F;
-    font-size: x-large;
+    font-size: large;
     font-weight: 300;
     align-items: flex-start; 
     text-align: left;
@@ -63,6 +74,7 @@
     margin-top: 25px;
     font-family: Calibri;
     margin-left: 30px;
+    position: sticky;
     
     /* row-gap: 5px; */
     /* grid-template-rows: 3px,6px; */
@@ -70,7 +82,7 @@
 
 #d1{
     width: 60vw;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 20px;
     margin-left: 20px;
     color: white;
@@ -78,6 +90,10 @@
 
 h1{
     font-size: 50px;
+}
+
+#u1{
+    width: 100%;
 }
 
 #right{
@@ -118,14 +134,42 @@ p:not(.no-hover):hover {
 h4:hover{
     color: white;
     cursor: pointer;
-  
 }
 
 input{
     height: 40px;
-    width: 300px;
+    width: 250px;;
     border-radius: 20px;
-    text-align-last: center;
+    text-align-last: left;
+    padding-left: 20px;
+    background-color: lightgrey;
+    margin-right: 180px;
+}
+
+img:hover{
+  cursor: pointer;
+  transform: scale(120%);
+  transition: 3 
+  s all;
+}
+
+#himg{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+
+    #lnav{
+        
+    h4{
+
+        display: none;
+    }
+    
+    #himg{
+        display: block;
+    }
+    }
 }
 
 </style>
@@ -133,6 +177,7 @@ input{
 <body>
     <div id="nav">
         <div id="lnav">
+            <img id="himg" src="house.svg" alt="">
             <h4>Home</h4>
             <h4>Example</h4>
             <h4>Icons</h4>
@@ -143,7 +188,11 @@ input{
         <input type="text" placeholder="Search...">
 
         <div id="rnav">
-
+         <img src="icons8-github-48.png" alt="" width="30">
+         
+         <img src="icons8-twitter-bird-48.png" alt="" width="30">
+         
+         <img src="icons8-instagram-50.png" alt="" width="30">
         </div>
     </div>
 
@@ -170,12 +219,22 @@ input{
                 Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. 
                 See it in practice with this Bootstrap CodePen demo.</h3>
 
-                <img src="bootstrapimg.png" alt="">
+                <img id="u1" src="bootstrapimg.png" alt="">
 
             <h2 style="font-size: 35px;">Reboot</h2>
             <h3 style="  font-weight: normal;">For improved cross-browser rendering, 
             we use Reboot to correct inconsistencies across browsers and devices while providing slightly more opinionated 
             resets to common HTML elements.</h3>
+
+            <h3>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laudantium nulla quis 
+            assumenda nihil dolore saepe vel et repellat vero accusantium, optio, corporis tempore. 
+            Atque nobis eveniet quos perferendis Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. Soluta modi eius voluptate vero facere ullam maxime voluptas. Similique ad eius maxime, 
+            saepe ipsam tempore quos quis, eligendi nam at quo! ipsum dolor sit amet consectetur adipisicing elit. 
+            Cum nulla laboriosam assumenda earum facere magni architecto? Similique alias quae, ut consequatur aperiam laborum distinctio asperiores molestias tempora esse ullam possimus.</h3>
+            <br>
+            <h2 style="font-size: 35px;">Accessibility</h2>
+            <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque est numquam fuga nihil molestiae harum dolores eos quos nulla vitae dolorem qui assumenda, reprehenderit ad quae doloremque iste quasi repellat.</h3>
         </div>
         <div id="right">
             <p class="right-p">Overview</p>
