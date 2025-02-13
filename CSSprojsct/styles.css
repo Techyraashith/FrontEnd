@@ -9,6 +9,9 @@
     height: 6vh;
     background-color: #EDEDED;
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 200;
 }
 
 #leftnav{
@@ -106,5 +109,82 @@
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+#Home{
+    width: 100vw;
+    min-height:60vh ;
     
+    display: flex;
+}
+
+
+#sideBar{
+    min-height: 50vh;
+    width: 15vw;
+    /* background-color: aquamarine; */
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 15px;
+    justify-content: space-around;
+    display: grid;
+    row-gap: 30px;
+    font-size: large;
+}
+
+#pic1{
+    min-height: 50vh;
+    width: 18vw;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#pic2{
+    min-height: 50vh;
+    width: 18vw;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#pic3{
+    min-height: 50vh;
+    width: 18vw;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#pic4 {
+    min-height: 50vh;
+    width: 18vw;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+
+
+
+#Botbar1{
+    min-height: 15vh;
+    width: 100vw;
+    margin-top: 30px;
+    background-color:#EDEDED;
+    display: flex;
+}
+
+#icons{
+    width: 20vw;
+    height: 5vh;
+    padding-top: 8px;
+    margin-left: 550px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#Botbar2{
+    width: 100vw;
+    min-height: 37vh;
+    background-color: #EDEDED;
+    text-align: center;
 }
