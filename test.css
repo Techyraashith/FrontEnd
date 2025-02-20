@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+
+#navbar{
+    width: 100vw;
+    height: 15vh;
+    background-color: #428699;
+    display: flex;
+    padding-left: 120px;
+}
+
+#menu{
+    width: 50%;
+    margin-left: 50px;
+    height: 10vh;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 100px;
+    color: white;
+    margin-top: 20px;
+}
+
+#Home{
+    width: 100vw;
+    height: 50vh;
+    background-color: #428699;
+    color: white;
+    padding-top: 20px;
+    font-size: x-large;
+}
+
+#searchBar{
+    width: 100vw;
+    height: 20vh;
+}
+
+#search{
+    width: 600px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 370px;
+    padding-left: 20px;
+}
